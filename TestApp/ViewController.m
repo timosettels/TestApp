@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <UIAlertView+Blocks/UIAlertView+Blocks.h>
 
 @interface ViewController ()
 
@@ -17,6 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [UIAlertView showWithTitle:@"Awesome" message:@"This works" cancelButtonTitle:@"OK" otherButtonTitles:nil tapBlock:^(UIAlertView *alertView, NSInteger buttonIndex) {
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
