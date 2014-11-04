@@ -1,0 +1,3 @@
+language: objective-c
+xcode_workspace: TestApp.xcworkspace # path to your xcodeproj folder
+xcode_scheme: TestApp
